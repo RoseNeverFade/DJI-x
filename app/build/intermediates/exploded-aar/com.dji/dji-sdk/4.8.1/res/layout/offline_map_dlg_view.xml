@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offline_map_dialog_view"
+    android:orientation="vertical"
+    android:background="@drawable/offline_map_stroke_dlg_dark_bg"
+    android:layout_width="@dimen/offline_map_dlg_width"
+    android:layout_height="@dimen/offline_map_dlg_height">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/offline_map_dialog_title"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="fadsfasdfasd"/>
+
+        <TextView
+            android:id="@+id/offline_map_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:gravity="center"
+            android:text="fadsfasdfasdfasdfasdfsad"/>
+
+        <EditText
+            android:id="@+id/offline_map_dialog_content_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:singleLine="true"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/offline_map_dialog_edit_text_bg"
+            android:textSize="14sp"
+            android:maxLength="28"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#e7e2e2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offline_map_dp_50_in_sw320dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/offline_map_dialog_cancel"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#9B9B9B"
+            android:text="@string/offline_map_cancel_text"
+            android:layout_height="45dp"
+            android:layout_weight="1"/>
+        <View
+            android:id="@+id/offline_map_dialog_split_line"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="#e7e2e2"/>
+
+        <TextView
+            android:id="@+id/offline_map_dialog_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#1088F2"
+            android:text="@string/offline_map_confirm_text"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+#Fri Dec 20 16:53:45 CST 2019
+base.0=C\:\\Users\\LZJ\\Desktop\\Desktop\\DJI\\Android-GEODemo-4.8.1-\\Android-GEODemo-4.8.1\\Android-GEODemo-4.8.1\\GEODemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\LZJ\\Desktop\\Desktop\\DJI\\Android-GEODemo-4.8.1-\\Android-GEODemo-4.8.1\\Android-GEODemo-4.8.1\\GEODemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+base.1=C\:\\Users\\LZJ\\Desktop\\Desktop\\DJI\\Android-GEODemo-4.8.1-\\Android-GEODemo-4.8.1\\Android-GEODemo-4.8.1\\GEODemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+file.0=C\:\\Users\\LZJ\\Desktop\\Desktop\\DJI\\Android-GEODemo-4.8.1-\\Android-GEODemo-4.8.1\\Android-GEODemo-4.8.1\\GEODemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes2.dex

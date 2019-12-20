@@ -1,0 +1,1 @@
+int string app_name_distortion 0x7f020000

@@ -1,0 +1,42 @@
+-injars 'C:\Users\LZJ\Desktop\Desktop\DJI\Android-GEODemo-4.8.1-\Android-GEODemo-4.8.1\Android-GEODemo-4.8.1\GEODemo\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\Users\LZJ\Desktop\Desktop\DJI\Android-GEODemo-4.8.1-\Android-GEODemo-4.8.1\Android-GEODemo-4.8.1\GEODemo\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\LZJ\AppData\Local\Android\Sdk\build-tools\26.0.1\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'C:\Users\LZJ\Desktop\Desktop\DJI\Android-GEODemo-4.8.1-\Android-GEODemo-4.8.1\Android-GEODemo-4.8.1\GEODemo\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+# view AndroidManifest.xml #generated:71
+-keep class com.dji.geodemo.MApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

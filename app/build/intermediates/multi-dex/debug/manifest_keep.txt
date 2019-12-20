@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:71
+-keep class com.dji.geodemo.MApplication { <init>(...); }
+

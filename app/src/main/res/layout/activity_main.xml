@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/main_title_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_dark">
+
+        <ImageButton
+            android:id="@+id/ReturnBtnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:onClick="onReturn"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_back_button" />
+
+        <TextView
+            android:id="@+id/ConnectStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Demo"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/geo_login_btn"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_login" />
+
+                <Button
+                    android:id="@+id/geo_logout_btn"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_logout" />
+
+                <Button
+                    android:id="@+id/geo_unlock_nfzs_btn"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_unlock_nfzs" />
+
+                <Button
+                    android:id="@+id/geo_get_unlock_nfzs_btn"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_get_unlock_nfzs" />
+
+                <Button
+                    android:id="@+id/geo_get_surrounding_nfz_btn"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_get_surrounding_nfz" />
+
+                <Button
+                    android:id="@+id/geo_reload_unlocked_zone_groups_from_server"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_reload_unlocked_zone_groups_from_server" />
+
+                <Button
+                    android:id="@+id/geo_sync_unlocked_zone_group_to_aircraft"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_sync_unlocked_zone_group_to_aircraft" />
+
+                <Button
+                    android:id="@+id/geo_get_loaded_unlocked_zone_groups"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_get_loaded_unlocked_zone_groups" />
+
+                <Button
+                    android:id="@+id/geo_update_location_btn"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_update_location" />
+
+                <Button
+                    android:id="@+id/geo_load_custom_unlock_zones"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_load_custom_unlock_zones" />
+
+                <Button
+                    android:id="@+id/geo_get_custom_unlock_zones"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_get_custom_unlock_zones" />
+
+                <Button
+                    android:id="@+id/geo_enable_custom_unlock_zone"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_enable_custom_unlock_zone" />
+
+                <Button
+                    android:id="@+id/geo_disable_custom_unlock_zone"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_disable_custom_unlock_zone" />
+
+                <Button
+                    android:id="@+id/geo_get_enabled_custom_unlock_zone"
+                    style="@style/left_button_list_button"
+                    android:text="@string/geo_get_enabled_custom_unlock_zone" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/login_status"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:layout_width="180dp"
+            android:layout_height="400dp"
+            android:layout_below="@+id/login_status"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/button_normal"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/fly_zone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //-----------新建到两个button按钮  记录数据 和输出数据-----------------------
+        <Button
+            android:id="@+id/btn_record"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="r" />
+
+        <Button
+            android:id="@+id/btn_output"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_marginTop="60dp"
+            android:text="o" />
+        <Button
+            android:id="@+id/btn_pic1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_marginTop="120dp"
+            android:text="a" />
+        <Button
+            android:id="@+id/btn_pic2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_marginTop="180dp"
+            android:text="b" />
+        <Button
+            android:id="@+id/btn_data"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_marginTop="240dp"
+            android:text="c" />
+
+        <Button
+            android:id="@+id/btn_waypoint"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="650dp"
+            android:layout_marginTop="60dp"
+            android:text="w" />
+
+        <Button
+            android:id="@+id/btn_hotpoint"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="650dp"
+            android:text="h" />
+
+        <TextView
+            android:id="@+id/textTLng"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="290dp"
+            android:text="经度"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/textTLat"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="290dp"
+            android:text="纬度"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/textTAlt"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="470dp"
+            android:layout_marginTop="290dp"
+            android:text="高度"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/textTPitch"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginBottom="20dp"
+            android:text="俯仰角"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/textTRoll"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="320dp"
+            android:text="横滚角"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textTYaw"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="470dp"
+            android:layout_marginTop="320dp"
+            android:text="偏航角"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textLng"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="290dp"
+            android:text="经度"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/textLat"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="380dp"
+            android:layout_marginTop="290dp"
+            android:text="纬度"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/textAlt"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="560dp"
+            android:layout_marginTop="290dp"
+            android:text="高度"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/textPitch"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="320dp"
+            android:text="俯仰角"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/textRoll"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="380dp"
+            android:layout_marginTop="320dp"
+            android:text="横滚角"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/textYaw"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="560dp"
+            android:layout_marginTop="320dp"
+            android:text="偏航角"
+            android:textAlignment="center" />
+
+    </RelativeLayout>r
+
+</LinearLayout>
+
+

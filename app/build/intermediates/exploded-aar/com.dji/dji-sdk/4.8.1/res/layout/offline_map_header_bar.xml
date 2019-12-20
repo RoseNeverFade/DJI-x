@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/offline_map_header_bar_height">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/offline_map_header_bar_start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/offline_map_header_bar_horizontal_padding" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/offline_map_header_bar_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/offline_map_header_bar_horizontal_padding" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/offline_map_header_bar_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/offline_map_header_bar_vertical_padding" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/offline_map_header_bar_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/offline_map_header_bar_vertical_padding" />
+
+    <ImageView
+        android:id="@+id/offline_map_header_bar_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/offline_map_header_bar_back"
+        app:layout_constraintBottom_toBottomOf="@id/offline_map_header_bar_bottom_guideline"
+        app:layout_constraintDimensionRatio="W,1:1"
+        app:layout_constraintStart_toStartOf="@id/offline_map_header_bar_start_guideline"
+        app:layout_constraintTop_toTopOf="@id/offline_map_header_bar_top_guideline" />
+
+    <TextView
+        android:id="@+id/offline_map_header_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/offline_map_header_bar_top_guideline"
+        app:layout_constraintBottom_toBottomOf="@id/offline_map_header_bar_bottom_guideline"
+        app:layout_constraintStart_toEndOf="@id/offline_map_header_bar_back"
+        app:layout_constraintEnd_toStartOf="@+id/offline_map_header_bar_management"
+        android:text="@string/offline_map_header_bar_title"
+        android:textColor="@color/offline_map_text_color"
+        android:textSize="@dimen/offline_map_header_bar_title_size" />
+
+    <ImageView
+        android:id="@id/offline_map_header_bar_management"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/offline_map_header_bar_management"
+        app:layout_constraintBottom_toBottomOf="@id/offline_map_header_bar_bottom_guideline"
+        app:layout_constraintDimensionRatio="W,1:1"
+        app:layout_constraintEnd_toEndOf="@id/offline_map_header_bar_end_guideline"
+        app:layout_constraintTop_toTopOf="@id/offline_map_header_bar_top_guideline" />
+
+</android.support.constraint.ConstraintLayout>
