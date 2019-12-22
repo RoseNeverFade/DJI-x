@@ -268,6 +268,9 @@
       <dir>C:\Users\LZJ\Desktop\Desktop\DJI\Android-GEODemo-4.8.1-\Android-GEODemo-4.8.1\Android-GEODemo-4.8.1\GEODemo\app</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -299,6 +302,7 @@
     <option name="width" value="1550" />
     <option name="height" value="840" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -612,8 +616,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19168901" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -637,10 +640,10 @@
       <window_info anchor="bottom" id="Android Monitor" order="9" weight="0.443505" />
       <window_info anchor="bottom" id="Logcat" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.08054841" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Gradle Console" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="15" sideWeight="0.49932975" visible="true" weight="0.13861386" />
+      <window_info anchor="bottom" id="Build" order="15" sideWeight="0.49932975" visible="true" weight="0.1388102" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
